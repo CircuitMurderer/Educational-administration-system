@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+html,
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+	font-family: "PingFang SC", sans-serif;
+	width: 100%;
+	top: 0;
+	padding: 1.5em;
+	position: fixed;
+}
+
+h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 8.5em;
+	letter-spacing: .85em;
+}
+
+.intro {
+	padding: 12em 6em;
+}
+
+.intro p {
+	font-family: 'acumin-pro-extra-condensed', sans-serif;
+	color: #343144;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1.8;
+	letter-spacing: .325em;
+}
+
+.footer-credit {
+	float: right;
+	width: 40%;
+	text-align: right;
+	position: relative;
+}
+
+.footer-disclaimer {
+	float: left;
+	width: 60%;
+	position: relative;
+}
+
+
+
+/* Pre-defined CSS */
+input::-webkit-credentials-auto-fill-button {
+	display: none !important;
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+}
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+body {
+	font-family: "PingFang SC", arial, sans-serif;
+	font-size: 1vw;
+	background: white;
+}
+img { 
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+a, a:visited {
+	color: inherit;
+}
+header {
+	z-index: 1000;
+}
+.site-logo {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.site-logo img {
+	width: 32px;
+}
+.logo {
+	opacity: 1;
+}
+.site-nav {
+	position: relative;
+	float: right;
+	z-index: 400;
+	top: 0;
+	left: 0;
+	display: block !important;
+	width: 50%;
+	padding: .75em 1em 0 0;
+	opacity: .95;
+	background: none;
+}
+.site-nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: right;
+}
+.site-nav ul li {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+.site-nav ul li a {
+	font-size: 13px;
+	padding-bottom: .5em;
+	text-decoration: none;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	color: black;
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+.site-nav ul li a:hover {
+	outline: none;
+	border-bottom: 1px solid black;
+	transition: .1s;
+}
+.hero {
+	position: relative;
+	height: 56vw;
+	background-color: #5c9fda;
+}
+.hero-content {
+	font-family: 'acumin-pro-extra-condensed', sans-serif;
+	color: #5c9fda;
+	position: absolute;
+	z-index: 20000;
+	padding-top: 4em;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+h2 {
+	font-weight: 100;
+	font-size: 2em;
+	line-height: 2.2;
+	margin-bottom: -.35em;
+	padding-top: 13%;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+}
+h1 {
+	margin-bottom: 1.5%;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0,.05);
+	margin-left: .7em;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: 100;
+	line-height: 2.75;
+	letter-spacing: .35em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+}
+.intro {
+  	position: relative;
+	background: #fff;
+}
+.artworks {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.artwork {
+	display: flex;
+}
+.artwork .artwork-piece {
+	padding: 8% 0 8% 23.5%;
+	background-image: -webkit-linear-gradient(top left, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+	background-image: -o-linear-gradient(top left, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+	background-image: linear-gradient(to bottom right, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+	width: 50%;
+}
+.artwork-piece figure {
+	position: relative;
+}
+.artwork-piece figure img {
+	position: relative;
+	z-index: 100;
+}
+.artwork .artwork-description {
+	background: #26223e;
+	color: #fff;
+	width: 50%;
+	padding: 11.25em 13em 11.5em;
+}
+.artwork-title {
+	font-family: 'acumin-pro-extra-condensed', sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	padding: 2em 0 0 0;
+	letter-spacing: .36em;
+	text-transform: uppercase;
+	line-height: 1.5;
+	max-width: 9em;
+	margin-bottom: .5em;
+}
+.artwork-text {
+	font-size: 1.1em;
+	line-height: 1.9;
+	opacity: .8;
+	max-width: 20em;
+}
+.see-more {
+	font-size: 1em;
+	display: inline-block;
+	margin-top: 4.1em;
+	padding: 0 0 .4em 0;
+	transition: all .3s;
+	text-decoration: none;
+}
+.see-more:hover {
+	border-bottom: 1px solid white;
+}
+footer {
+	margin-top: -3.5em;
+	padding-top: 10em;
+	background-image: -webkit-linear-gradient(bottom left, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+	background-image: -o-linear-gradient(bottom left, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+	background-image: linear-gradient(to top right, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+}
+.footer-content {
+	width: 64%;
+	margin: 0 auto;
+	padding-bottom:1.7em;
+}
+.footer-social {
+	display: block;
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+}
+.footer-social li {
+	display: inline-block;
+	margin: 0 1.2em;
+}
+.footer-social li a {
+	line-height: 3.5em;
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	text-align: center;
+	border: 2px solid rgba(255,255,255,.3);
+	border-radius: 50%;
+}
+.footer-social li a:hover {
+	border-color: #fff;
+	background: #fff;
+}
+.footer-social li a img {
+	width: auto;
+	height: 1em;
+}
+.footer-social li a .social-hover {
+	display: none;
+}
+.footer-social li a:hover .social-default {
+	display: none;
+}
+.footer-social li a:hover .social-hover {
+	display: inline;
+}
+.footer-info {
+	padding-top: 5em;
+}
+.footer-info p {
+	font-size: .8em;
+	color:#fff;
+	line-height: 1.55;
+	max-width: 36em;
+	margin-bottom: 1.7em;
+}
+.footer-info {
+	clear: both;
+}
+.footer-legal {
+	opacity: .8;
+}
+.footer-credit a:hover {
+	text-decoration: none;
+}
+
+/* form */
+.box{
+	width: 300px;
+	padding: 40px;
+	position: absolute;   /* 绝对定位，相对于父标签来进行定位 */
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	background: rgba(255,255,255,.7);
+	text-align: center;  /*表单中内容居中*/
+	box-shadow: 5px 10px 10px rgba(255,255,255,.5);
+	border-radius: 10px;
+}
+.box h2{
+	color: black;    /* 设置字体颜色 */
+	text-transform: uppercase;  /* 将字体全部设置成大写字母  */
+	font-weight: 100;  /*  设置字体粗细   */
+}
+.box input[type="text"],.box input[type="password"]{
+	border-radius: 24px;
+	border: 2px solid #3498db;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: grey;     /* 设置输入框中竖线的颜色 */
+	transition: 0.25s;   /* 设置元素过渡效果 */
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+	width: 220px;
+	border-color: #2ecc71;
+}
+.box input[type="submit"]{
+	border-radius: 24px;
+	border: 2px solid #2ecc71;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 40px;
+	outline: none;
+	color: grey;     /* 设置输入框中竖线的颜色 */
+	transition: 0.25s;
+	cursor: pointer;    /* 设置光标的样式 */
+}
+.box input[type="submit"]:hover{
+	color: #FFFFFF;
+	background: #2ecc71;
+}
+
+
+
+
+
+
+
+
+
+
+

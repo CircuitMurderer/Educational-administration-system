@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: gainsboro;
+    background: url("../images/parallax.png");
+    font-family: "PingFang SC", sans-serif;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.box .inputBox{
+    position: relative;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gainsboro;
+    margin-bottom: 30px;
+    border-width: 0;
+    border-bottom: 1px solid gainsboro;
+    outline: none;
+    background: transparent;
+    transition: .5s;
+}
+.box .inputBox label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: gainsboro;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .inputBox input:focus{
+    border-color: #03a9f4;
+}
+.box .inputBox input:valid{
+    border-color: gainsboro;
+}
+
+.box .inputBox input:focus ~ label{
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.box .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: gainsboro;
+    font-size: 12px;
+}
+.box input[type='submit']{
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #03a9f4;
+    /*padding: 10px 20px;*/
+    border-radius: 5px;
+    cursor: pointer;
+    left: 135px;
+    /*top: 50%;*/
+
+}
+
+/*
+ body{
+     font-size: 18px;
+     line-height: 20px;
+ }
+label{
+    margin:10px;
+}*/
+.a-radio{
+    display: none;
+}
+.b-radio{
+    display: inline-block;
+    border:1px solid #ccc;
+    width:16px;
+    height: 16px;
+    border-radius:2px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+}
+.b-radio:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: #03a9f4;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio:checked~.b-radio:before{
+    display: block;
+}
+
+
