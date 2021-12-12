@@ -34,7 +34,7 @@ if (isset($_COOKIE['uid'])) {
         <nav class="site-nav">
             <ul>
                 <li><a href="register.php">注册</a></li>
-                <li><a onclick="alert('Copyright &copy; 2021 Alex Zhao, WHU.\nAll rights reserved.');"
+                <li><a onclick="alert('Copyright &copy; 2021 CircuitMurderer, WHU.\nAll rights reserved.');"
                     style="cursor: pointer">关于</a></li>
             </ul>
         </nav>

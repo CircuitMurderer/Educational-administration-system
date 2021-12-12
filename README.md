@@ -1,6 +1,10 @@
 # Educational-administration-system
 
-## 使用指南
+## 教务管理系统
+
+---
+
+### 使用指南
 
 > mysql端口：`999`  root密码：`123456`
 > 
@@ -12,7 +16,7 @@
 
 **默认管理员密码：**`pooh bear`
 
-## 环境
+### 环境
 
 > php 7.3
 > 

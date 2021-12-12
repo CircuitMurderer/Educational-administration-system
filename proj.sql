@@ -1,5 +1,5 @@
 -- -----------------------------------------
--- Zhao Yuqi designed, All rights reserved.
+-- CircuitMurderer designed, All rights reserved.
 -- -----------------------------------------
 
 SET NAMES utf8;
