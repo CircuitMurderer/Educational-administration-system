@@ -8,7 +8,7 @@
 
 <body>
 <div class="box">
-    <h2>注册</h2>
+    <h2><?php echo "注册"; ?></h2>
     <form class="form-box" method="post" action="register_process.php">
         <div class="inputBox">
             <input type="text" name="uid" autocomplete="off" required="">
